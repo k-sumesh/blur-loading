@@ -11,6 +11,7 @@ body {
   margin: 0;
   overflow: hidden;
 }
+
 .bg {
   background: url('./assets/bg.jpg');
   background-position: center;
@@ -26,6 +27,13 @@ body {
   z-index: -1;
   filter: blur(30px);
 }
+
+@media screen and (max-width: 600px) {
+  .bg {
+    background: url('./assets/mob.jpg');
+  }
+}
+
 .loading-text {
   font-size: 50px;
   color: #fff;
